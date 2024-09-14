@@ -11,13 +11,7 @@ const App = () => {
 
   const fetchNews = async () => {
     try {
-      const response = await axios.get('https://aconews-lhp5.onrender.com/news', {
-        params: { keyword, category, country, language, page }
-      });
-      setNews(response.data.articles);
-    } catch (error) {
-      console.error('Error fetching news:', error.message);
-    }
+     
   };
 
   useEffect(() => {
